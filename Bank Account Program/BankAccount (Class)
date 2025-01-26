@@ -1,0 +1,30 @@
+package com.example.bankaccountprogram
+
+class BankAccount(var accholder:String, var balance: Double) {
+    private val transactionhistory = mutableListOf<String>("")
+
+    fun deposite(amount: Double){
+        balance += amount
+        transactionhistory.add("$accholder deposited ₹$amount")
+
+    }
+
+    fun withdraw(amount: Double){
+        if(amount <= balance){
+            // can withdraw
+            balance -= amount
+            transactionhistory.add("$accholder withdrew ₹$amount")
+        }else{
+            //can't withdraw
+            print("Not enough money to withdraw ₹$amount")
+        }
+
+    }
+    fun displaytranshistory(){
+        println("Transaction history for $accholder")
+        for(transaction in transactionhistory){
+            println(transaction)
+        }
+
+    }
+}
