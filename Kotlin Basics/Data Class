@@ -1,0 +1,23 @@
+package com.example.kotlinbasics
+
+data class Person(val name: String, val age: Int)
+
+fun main() {
+    // Create an instance of the data class
+    val person1 = Person(name = "Krushna", age = 22)
+
+    // Auto-generated toString()
+    println(person1) // Output: Person(name=Krushna, age=22)
+
+    // Auto-generated equals() and hashCode()
+    val person2 = Person(name = "Krushna", age = 22)
+    println(person1 == person2) // Output: true
+
+    // Auto-generated copy()
+    val person3 = person1.copy(age = 23)
+    println(person3) // Output: Person(name=Krushna, age=23)
+
+    // Destructuring declarations
+    val (name, age) = person1
+    println("Name: $name, Age: $age") // Output: Name: Krushna, Age: 22
+}
