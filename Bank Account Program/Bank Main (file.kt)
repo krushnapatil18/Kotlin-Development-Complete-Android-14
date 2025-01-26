@@ -1,0 +1,12 @@
+package com.example.bankaccountprogram
+
+fun main(){
+    val krushnabankacc = BankAccount("Krushna Patil", 50513.51)
+
+    krushnabankacc.deposite(5000.0)
+    krushnabankacc.withdraw((43000.0))
+
+    krushnabankacc.displaytranshistory()
+    println("${krushnabankacc.accholder}'s" +
+            " balance is ₹${krushnabankacc.balance}")
+}
