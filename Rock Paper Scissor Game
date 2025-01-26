@@ -1,0 +1,35 @@
+package com.example.kotlinbasics
+
+fun main(){
+
+    //creating an object of dog class
+
+    var pc = ""
+    var cc = ""
+    println("WARNING Enter Valid Input Otherwise Computer Will Won!")
+    println("Rock, Paper or Scissor Enter your option! : ")
+    pc = readln()
+    val ranno = (1..3).random()
+    when(ranno){
+        1->{
+            cc = "Rock"
+        }
+        2->{
+            cc = "Paper"
+        }
+        3->{
+            cc = "Scissor"
+        }
+    }
+    println(cc)
+    val winner = when {
+        pc == cc -> "TIE"
+        pc == "Rock" && cc == "Scissor" -> "Player"
+        pc == "Scissor" && cc == "Paper" -> "Player"
+        pc == "Paper" && cc == "Rock" -> "Player"
+        else -> "Computer"
+    }
+    if(winner == "TIE") println("Tie")
+    else println("$winner won")
+
+}
