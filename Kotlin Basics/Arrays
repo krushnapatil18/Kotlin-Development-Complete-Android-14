@@ -1,0 +1,20 @@
+package com.example.bankaccountprogram
+
+fun main(){
+
+    val arr = intArrayOf(1,2,4,5,6,7)
+    println(arr.contentToString())
+    println(arr[3])
+    arr[2] = 3
+    arr[3] = 4
+    arr[4] = 5
+    arr[5] = 65
+    println(arr.contentToString())
+
+    val fruits = arrayOf(Fruit("apple", 55),Fruit("banana",44),Fruit("mango",88))
+//    println(fruits.contentToString())
+    for (index in fruits.indices){
+        println(fruits[index].name)
+    }
+}
+data class Fruit(val name: String, val price: Int)
