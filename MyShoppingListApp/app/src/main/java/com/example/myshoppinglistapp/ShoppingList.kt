@@ -1,5 +1,5 @@
 package com.example.myshoppinglistapp
-
+//updated code
 import android.app.AlertDialog
 import android.content.ClipData.Item
 import androidx.compose.foundation.BorderStroke

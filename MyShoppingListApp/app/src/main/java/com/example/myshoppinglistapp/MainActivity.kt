@@ -1,5 +1,5 @@
 package com.example.myshoppinglistapp
-
+//This is updated
 import android.content.ClipData.Item
 import android.os.Bundle
 import androidx.activity.ComponentActivity
