@@ -1,0 +1,3 @@
+interface Archery {
+    fun shootArrow()
+}
