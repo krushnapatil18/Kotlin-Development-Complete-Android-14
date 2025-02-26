@@ -1,0 +1,3 @@
+interface Singer {
+    fun sing()
+}
